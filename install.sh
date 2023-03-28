@@ -25,9 +25,9 @@ source $HOME/.bash_profile
 echo "PATHFINDER_ETHEREUM_API_URL=$ALCHEMY_KEY" > pathfinder-var.env
 
 pringGreen "Spin up node"
-docker-compose pull
+docker compose pull
 mkdir -p $HOME/pathfinder/pathfinder
 chown -R 1000.1000 .
 sleep 1
-docker-compose up -d
+docker compose up -d
 
